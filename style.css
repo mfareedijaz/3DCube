@@ -1,0 +1,90 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  cursor: all-scroll;
+}
+
+#cubeContainer {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  position: relative;
+  perspective: 1000px;
+  background: linear-gradient(to right, #2c3e50, #fd746c);
+}
+
+#cubeControllers > button {
+  padding: 9px 20px;
+  font-size: 10px;
+  margin-right: 5px;
+  font-family: cursive;
+  background-color: #545451;
+  color: white;
+  cursor: pointer;
+  border: none;
+  border-radius: 15%;
+  box-shadow: 3px 4px black;
+}
+
+#cubeControllers > button:hover {
+  box-shadow: 0px 0px black;
+  transition: box-shadow 0.4s;
+}
+
+#cube {
+  width: 250px;
+  height: 250px;
+  position: relative;
+  transform-style: preserve-3d;
+}
+
+.face {
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.8;
+  font-family: cursive;
+  color: white;
+  font-weight: 600;
+  font-size: larger;
+}
+
+#front {
+  background-color: rgb(87, 235, 161);
+  transform: translateZ(125px);
+}
+
+#top {
+  background-color: rgb(100, 178, 209);
+  transform: rotateX(90deg) translateZ(125px);
+}
+
+#bottom {
+  background-color: rgba(163, 218, 35, 0.603);
+  transform: rotateX(-90deg) translateZ(125px);
+}
+
+#left {
+  background-color: rgba(219, 77, 21, 0.822);
+  transform: rotateY(-90deg) translateZ(125px);
+}
+
+#back {
+  background-color: rgb(146, 101, 167);
+  transform: rotateY(180deg) translateZ(125px);
+}
+
+#right {
+  background-color: rgb(187, 98, 153);
+  transform: rotateY(90deg) translateZ(125px);
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>3D Cube</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div id="cubeContainer">
+    <div id="cubeControllers">
+      <button id="autoRotate" onclick="handleAutoRotation()">Auto ON</button>
+      <button id="rotateToTop" onclick="handleTopRotation()">Top</button>
+      <button id="rotateToBottom" onclick="handleBottomRotation()">Bottom</button>
+      <button id="rotateToFront" onclick="handleFrontRotation()">Front</button>
+      <button id="rotateToBack" onclick="handleBackRotation()">Back</button>
+      <button id="rotateToLeft" onclick="handleLeftRotation()">Left</button>
+      <button id="rotateToRight" onclick="handleRightRotation()">Right</button>
+    </div>
+    <div id="cube">
+      <div id="top" class="face">TOP</div>
+      <div id="bottom" class="face">BOTTOM</div>
+      <div id="front" class="face">FRONT</div>
+      <div id="back" class="face">BACK</div>
+      <div id="left" class="face">LEFT</div>
+      <div id="right" class="face">RIGHT</div>
+    </div>
+  </div>
+  <script src="./script.js"></script>
+</body>
+
+</html>
